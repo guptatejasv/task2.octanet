@@ -1,0 +1,103 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    
+    color:#fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: goldenrod;
+    
+  }
+  
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    
+  }
+  
+  .form input[type="text"],
+  .form input[type="date"] {
+    flex: 1 1 auto;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2rem;
+  }
+  
+  .form button {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #0b5453;
+    color: white;
+    cursor: pointer;
+    border-radius: 2rem;
+  }
+  
+  .card {
+    margin-top: 4px;
+    padding: 10px;
+    background-color: #cbe768;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #b0b052;
+  }
+  
+  .card.completed {
+    background-color: #e2118e;
+  }
+  
+  .card.overdue {
+    background-color: #E966A0;
+  }
+  
+  .card.not-completed {
+    background-color: #ec4e0f;
+  }
+  
+  .task-checkbox {
+    margin-right: 10px;
+  }
+  
+  .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .delete-button-icon {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .card.warning {
+    background-color: #cb0000;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .form input[type="text"],
+    .form input[type="date"],
+    .form button {
+      flex: 20 20 50%;
+      margin-bottom: 10px;
+    }
+  }
